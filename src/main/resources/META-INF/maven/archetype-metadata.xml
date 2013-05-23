@@ -3,6 +3,7 @@
 
     <requiredProperties>
         <requiredProperty key="artifactId"/>
+        <requiredProperty key="package"/>
         <requiredProperty key="service"/>
     </requiredProperties>
 

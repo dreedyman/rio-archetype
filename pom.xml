@@ -5,7 +5,7 @@
 
     <groupId>org.rioproject</groupId>
     <artifactId>rio-archetype</artifactId>
-    <version>5.0</version>
+    <version>5.1</version>
     <name>Rio Maven Archetype</name>
     <packaging>maven-archetype</packaging>
     <description>A custom Maven archetype for creating a Rio project.</description>

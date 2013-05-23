@@ -13,7 +13,7 @@
         <dependency>
             <groupId>org.rioproject</groupId>
             <artifactId>rio-platform</artifactId>
-            <version>5.0-M1</version>
+            <version>${rio.version}</version>
         </dependency>        
     </dependencies>
 
@@ -23,7 +23,7 @@
     </modules>
 
     <properties>
-        <rio.version>5.0-M1</rio.version>
+        <rio.version>5.0-M3</rio.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -63,7 +63,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-rio-plugin</artifactId>
-                <version>5.0-M1</version>
+                <version>5.0</version>
                 <extensions>true</extensions>
 
                 <executions>
@@ -79,19 +79,6 @@
                     <opstring>src/main/opstring/${artifactId}.groovy</opstring>
                 </configuration>
             </plugin>
-
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                    <optimize>true</optimize>
-                    <encoding>UTF-8</encoding>
-                    <meminitial>128m</meminitial>
-                    <maxmem>1024m</maxmem>
-                </configuration>
-            </plugin>
-
         </plugins>
     </build>
     

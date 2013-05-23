@@ -18,10 +18,10 @@ deployment(name:'$service') {
      */
     service(name: '$service') {
         interfaces {
-            classes '$package.$artifactId.$service'
+            classes '${groupId}.${artifactId}.api.$service'
             artifact ref:'service-dl'
         }
-        implementation(class:'$package.$artifactId.${service}Impl') {
+        implementation(class:'${groupId}.${artifactId}.service.${service}Impl') {
             artifact ref:'service'
         }
         maintain 1
